@@ -2,7 +2,7 @@
 set -e
 
 rm -Rf tmp/
-composer create-project "symfony/skeleton" tmp --prefer-dist --no-progress --no-interaction --no-install
+composer create-project "symfony/skeleton $1" tmp --prefer-dist --no-progress --no-interaction --no-install
 
 cd tmp
 cp -Rp . ..
